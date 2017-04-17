@@ -1,0 +1,18 @@
+.col-md-7 p{
+margin: 0 20 10px;
+}
+.form-control {
+	height: 41px;
+}
+.form-group a{
+	font-family: '微软雅黑';
+}
+.col-sm-6 div{
+	padding:2px;
+}
+.col-md-4 select{
+	font-size:12px;padding:0px;
+}
+.form-group>label[id]{
+				color:red;
+				padding-top: 10px;
