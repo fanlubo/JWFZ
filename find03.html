@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<script src="jquery/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+		<!--<script src="js/yanzheng.js"></script>-->
+		<script type="text/javascript" src="js/checkCode.js"></script> 
+	</head>
+
+	<body>
+		<!--将固定宽度的栅格布局转换为 100% 宽度的布局-->
+		<nav class="navbar navbar-fixed-top" style="background-color:#31b0d5;">
+			<!--设置导航栏和其颜色，将其固定在顶部-->
+			<a class="navbar-brand" style="color:#E6E6E6;">
+				<img alt="找回密码页面">
+			</a>
+		</nav>
+		<div class="row container-fluid" style="border: #080808;padding-top: 100px;">
+			<div class="col-md-3"></div>
+			<div class="col-md-6 row">
+				<span class="glyphicon glyphicon-tag" aria-hidden="true" style="color: #31b0d5;"></span><span style="font-size: 18px;">&nbsp;&nbsp;重新设置密码</span>
+				<hr />
+				<form action="find04.html" method="post" id="signupForm" class="form-horizontal">
+					
+					<div class="form-group">
+						<label class="col-sm-3 control-label">请填写您的新密码</label>
+						<div class="col-sm-6">
+							<input id="password" type="password" class="form-control" name="password">
+						</div>
+						<label id="password-error" class="error" for="password"></label>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label">确认密码</label>
+						<div class="col-sm-6">
+							<input type="password" class="form-control" id="confirm_password" name="confirm_password" >
+						</div>
+						<label id="confirm_password-error" class="error" for="confirm_password"></label>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label"></label>
+						<div class="col-sm-6">
+							<button type="submit"  class="btn btn-info" style="width: 100%;height:50px;font-size: 20px;">下一步</button>
+						</div>
+						
+					</div>
+				</form>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+		<nav class="navbar bg-primary navbar-fixed-bottom text-center" style="background-color:#31b0d5;">
+			<!--设置底部-->
+			<h6>中国·河南·许昌</h6>
+			<h6>许昌学院信息工程学院 豫ICP备5009140038号</h6>
+		</nav>
+	</body>
+
+</html>
