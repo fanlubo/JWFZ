@@ -17,3 +17,8 @@ margin: 0 20 10px;
 	color:red;
 	padding-top: 10px;
 }
+nav > li > a:focus, .nav > li > a:hover {
+    text-decoration: none;
+        background-color: #0e89e4;
+}
+}
