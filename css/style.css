@@ -14,5 +14,6 @@ margin: 0 20 10px;
 	font-size:12px;padding:0px;
 }
 .form-group>label[id]{
-				color:red;
-				padding-top: 10px;
+	color:red;
+	padding-top: 10px;
+}
