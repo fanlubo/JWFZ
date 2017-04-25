@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<script src="jquery/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+		<!--<script src="js/yanzheng.js"></script>-->
+		<script type="text/javascript" src="js/checkCode.js"></script>
+	</head>
+
+	<body>
+		<!--将固定宽度的栅格布局转换为 100% 宽度的布局-->
+		<nav class="navbar navbar-fixed-top" style="background-color:#31b0d5;">
+			<div class="container-fluid">
+				<div class="navbar-header" style="width:25%;">
+					<a class="navbar-brand" href="index.html" style="color:#E6E6E6;">欢迎进入教务辅助系统</a>
+				</div>
+				<div id="navbar">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="student-main01.html" style="color:#E6E6E6;">填写需知</a>
+						</li>
+						<li>
+							<a href="student-lunwen01.html" style="color:#E6E6E6;">论文登记</a>
+						</li>
+						<li>
+							<a href="top2.html" style="color:#E6E6E6;">专利登记</a>
+						</li>
+						<li>
+							<a href="top3.html" style="color:#E6E6E6;">查看审核状态</a>
+						</li>
+
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right" style="width:10%;">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user fa-fw"></i>&nbsp;小王&nbsp;<span class="caret"></span></a>
+							<ul class="dropdown-menu dropdown-menu-left" role="menu">
+								<li>
+									<a href="#">修改个人信息</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="find03.html">修改密码</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="login.html"><i class="fa fa-sign-out fa-fw"></i>&nbsp;注销</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="row container-fluid" style="border: #080808;padding-top: 100px;">
+			<div class="col-md-3"></div>
+			<div class="col-md-6 row">
+				<span class="glyphicon glyphicon-tag" aria-hidden="true" style="color: #31b0d5;"></span><span style="font-size: 18px;">&nbsp;&nbsp;国际教育学院学生论文申请填写</span>
+				<hr />
+				<form action="" method="post" id="signupForm" class="form-horizontal">
+					<div class="form-group">
+						<label class="col-sm-2 control-label">论文名称</label>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" id="username" name="username" placeholder="">
+						</div>
+						<label id="username-error" class="error" for="username"></label>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">密码</label>
+						<div class="col-sm-6">
+							<input id="password" type="password" class="form-control" name="password">
+						</div>
+						<label id="password-error" class="error" for="password"></label>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">确认密码</label>
+						<div class="col-sm-6">
+							<input type="password" class="form-control" id="confirm_password" name="confirm_password">
+						</div>
+						<label id="confirm_password-error" class="error" for="confirm_password"></label>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">姓名</label>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" id="name" name="name">
+						</div>
+						<label id="name-error" class="error" for="name"></label>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">邮箱</label>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" name="email" id="email">
+						</div>
+						<label id="email-error" class="error" for="email"></label>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">手机号</label>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" name="phone" id="phone">
+						</div>
+						<label id="phone-error" class="error" for="phone"></label>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">班级</label>
+						<div class="col-sm-6 ">
+							<div class="col-md-4" style="padding:2px;">
+								<select id="first" onchange="Liandong(this)" class="form-control" style="font-size:12px;padding:0px;">
+									<option>==请选择==</option>
+									<option>国际教育学院</option>
+									<option>信息工程学院</option>
+								</select>
+							</div>
+							<div class="col-md-3" style="padding:2px;">
+								<select class="form-control" style="font-size:12px;padding:0px;">
+									<option>2012级</option>
+									<option>2013级</option>
+									<option>2014级</option>
+									<option>2015级</option>
+									<option>2016级</option>
+								</select>
+							</div>
+							<div class="col-md-5" style="padding:2px;">
+								<select id="second" class="form-control" style="font-size:12px;padding:0px;">
+									<option>==请选择==</option>
+
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label"></label>
+						<div class="col-sm-6">
+							<button type="submit" class="btn btn-info" style="width: 100%;height:50px;font-size: 20px;">立即注册</button>
+						</div>
+
+					</div>
+				</form>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+		<nav class="navbar bg-primary navbar-fixed-bottom text-center" style="background-color:#31b0d5;">
+			<!--设置底部-->
+			<h6>中国·河南·许昌</h6>
+			<h6>许昌学院信息工程学院 豫ICP备5009140038号</h6>
+		</nav>
+	</body>
+
+</html>
